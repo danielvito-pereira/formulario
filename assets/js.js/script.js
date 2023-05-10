@@ -1,13 +1,14 @@
-const mode = document.getElementById('mode_icon');
-mode.addEventListener('click', () => {
-  const form = document.getElementById('login-form');
-  if (mode.classList.contains('fa-moon')) {
-      mode.classList.remove('fa-moon');
-      mode.classList.add('fa-sun');
-      form.classList.add('dark');
-  } else {
-    mode.classList.add('fa-moon');
-    mode.classList.remove('fa-sun');
-    form.classList.remove('dark');
-  }
-})
+const MODE_ICON = document.getElementById('mode_icon');
+const LOGIN_FORM = document.getElementById('login-form');
+const DARK_MODE_CLASS = 'dark';
+const ICON_MOON_CLASS = 'fa-moon';
+const ICON_SUN_CLASS = 'fa-sun';
+
+let isDarkMode = false;
+
+MODE_ICON.addEventListener('click', () => {
+  isDarkMode = !isDarkMode;
+  MODE_ICON.classList.toggle(ICON_MOON_CLASS, !isDarkMode);
+  MODE_ICON.classList.toggle(ICON_SUN_CLASS, isDarkMode);
+  LOGIN_FORM.classList.toggle(DARK_MODE_CLASS, isDarkMode);
+});
