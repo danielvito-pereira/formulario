@@ -64,11 +64,16 @@ a {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 2.25rem;
 }
 #container #login-form #inputs .input-box {
   font-size: 15px;
   color: #797984;
+}
+#container #login-form #inputs .input-box label {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 #container #login-form #inputs .input-box label .input-field {
   display: flex;
@@ -76,7 +81,7 @@ a {
   gap: 15px;
   padding: 3px;
   cursor: text;
-  border-bottom: 1px solid linear-gradient(90deg, rgb(14, 3, 3) 0%, rgb(235, 0, 0) 37%, rgb(47, 5, 3) 79%);
+  border-bottom: 1px solid #000;
 }
 #container #login-form #inputs .input-box label .input-field i {
   font-size: 18px;

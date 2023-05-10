@@ -76,18 +76,23 @@ a{
       flex-flow: column nowrap;
       align-items: center;
       justify-content:center;
-      gap: 1.25rem;
+      gap: 2.25rem;
       .input-box{
         font-size: 15px;
         color:$primary-color-dark;
+        
         label{
+          
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
           .input-field{
             display: flex;
             align-items: center;
             gap: 15px;
             padding: 3px;
             cursor: text;
-            border-bottom: 1px solid $gradiente-button;
+            border-bottom: 1px solid $black;
             i{
               font-size: 18px;
               color: $black;
