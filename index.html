@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/scss/main.css">
+  <title>Formulário com Modo DARK e LIGHT</title>
+</head>
+<body>
+  <main id="container">
+    <form action="" id="login-form">
+      <div id="form_header">
+        <h1>Login</h1>
+        <i id="mode_icon" class="fa-solid fa-moon"></i>
+      </div>
+      <div id="social-media">
+        <a href="" class="a">
+          <img src="" alt="feceboock">
+        </a>
+        <a href="" class="a">
+          <img src="" alt="google">
+        </a>
+        <a href="" class="a">
+          <img src="" alt="github">
+        </a>
+      </div>
+
+      <div id="inputs">
+        <div class="input-box">
+          <label for="name">
+            Name
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" name="name" placeholder="">
+            </div>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label for="email">
+            E-mail
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="">
+            </div>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label for="password">
+            Password
+            <div class="input-field">
+              <i class="fa-solid fa-key"></i>
+              <input type="password" id="password" name="password" placeholder="">
+            </div>
+          </label>
+          <div id="forgot-password">
+            <a href="">Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" id="login-button">Login</button>
+    </form>
+  </main>
+  <script src="./assets/js.js/script.js"></script>
+</body>
+</html>

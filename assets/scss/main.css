@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap");
+/*reset*/
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(64, 3, 3) 0%, rgb(253, 29, 29) 50%, rgb(94, 43, 42) 100%);
+}
+#container #login-form {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1.875rem 2.5rem;
+  border-radius: 0.5rem;
+  gap: 1.875rem;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  background-color: white;
+  animation: light-dark 0.3s ease-in-out;
+}
+#container #login-form #form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#container #login-form #form-header .h1 {
+  font-size: 2.5rem;
+  position: relative;
+}
+#container #login-form #form-header .h1::before {
+  position: absolute;
+  content: " ";
+  width: 40%;
+  height: 3px;
+  bottom: 10px;
+  background-color: red;
+}
+#container #login-form #form-header #mode_icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+#container #login-form #social-media {
+  display: flex;
+  justify-content: space-around;
+}
+#container #login-form #social-media:hover {
+  transform: scale(1.2);
+}
+#container #login-form #inputs {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+#container #login-form #inputs .input-box {
+  font-size: 15px;
+  color: #797984;
+}
+#container #login-form #inputs .input-box label .input-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  cursor: text;
+  border-bottom: 1px solid linear-gradient(90deg, rgb(14, 3, 3) 0%, rgb(235, 0, 0) 37%, rgb(47, 5, 3) 79%);
+}
+#container #login-form #inputs .input-box label .input-field i {
+  font-size: 18px;
+  color: #000;
+}
+#container #login-form #inputs .input-box label .input-field input {
+  border: none;
+  background-color: transparent;
+  width: 260px;
+  font-size: 18px;
+  padding: 0 5px;
+}
+#container #login-form #inputs .input-box label .input-field input:focus {
+  outline: none;
+}
+#container #login-form #inputs .input-box #forgot-password {
+  text-decoration: none;
+  font-size: 12px;
+  color: #797984;
+}
+#container #login-form #inputs .input-box #forgot-password:hover {
+  color: linear-gradient(90deg, rgb(14, 3, 3) 0%, rgb(235, 0, 0) 37%, rgb(47, 5, 3) 79%);
+}
+#container #login-form #login-button {
+  border: none;
+  background-color: linear-gradient(90deg, rgb(14, 3, 3) 0%, rgb(235, 0, 0) 37%, rgb(47, 5, 3) 79%);
+  color: white;
+  padding: 0.4375rem;
+  font-size: 1.125rem;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#container #login-form #login-button:hover {
+  transform: scale(1.05);
+}
+#container .dark#login-form {
+  color: white;
+  background-color: #797984;
+  animation: dark-light 0.3s ease-in-out;
+}
+#container .dark#login-form #inputs .input-box {
+  color: #797984;
+}
+#container .dark#login-form #inputs .input-box label .input-field i {
+  font-size: 18px;
+  color: white;
+}
+#container .dark#login-form #inputs .input-box #forgot-password {
+  text-decoration: none;
+  font-size: 12px;
+  color: #797984;
+}
+#container .dark#login-form #inputs .input-box #forgot-password:hover {
+  color: linear-gradient(90deg, rgb(14, 3, 3) 0%, rgb(235, 0, 0) 37%, rgb(47, 5, 3) 79%);
+}
+@keyframes dark-light {
+  0% {
+    background-color: #312d37;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes light-dark {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #312d37;
+  }
+}/*# sourceMappingURL=main.css.map */
